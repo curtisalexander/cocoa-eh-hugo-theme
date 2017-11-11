@@ -159,6 +159,8 @@ div.header .content {
 div.header .container .logo {
   max-width: 100px;
   margin-left: -2em;
+  /* Added to better space image logo against headers */
+  padding-right: 5px;
 }
 div.header .name {
   padding-top: 20px;
