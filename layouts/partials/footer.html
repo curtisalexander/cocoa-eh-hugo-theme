@@ -91,12 +91,11 @@
             </a>
         {{ end }}
 
-        {{ with .OutputFormats.Get "rss" -}}
-            {{ printf `<a href="%s"  >` .Permalink | safeHTML }}
-        {{ end -}}
+        {{ with .OutputFormats.Get "rss" }}
+            <a href="{{ .RelPermalink }}" >
                 <img class="icon" src="{{ .Site.BaseURL }}img/rss.svg" alt="rss" />
             </a>
-
+        {{ end }}
         </div>
     </div>
 </div>
